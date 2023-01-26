@@ -72984,14 +72984,14 @@ s.ib(0,B.cI)}else if(m.as){s=m.r
 p=s.a.a
 r=m.w
 o=r.a.a
-o=A.db(o,"\n","\\n")
 o=A.db(o,"\t","\\t")
 o=A.db(o,"\r","\\r")
 o=A.db(o,"\f","\\f")
 o=A.db(o,"\b","\\b")
 o=A.db(o,"\\","\\\\")
 n=A.db(o,"'","\\\\'")
-m.d.push(A.i(["code_path",A.db(n,'"','\\"'),"title",p,"button_is",""+m.at,"text_is",""+m.z,"code",""+m.as,"image_is",""+m.Q],t.N,t.z))
+o=A.db(n,'"','\\"')
+m.d.push(A.i(["code_path",A.db(o,"\n","\\n"),"title",p,"button_is",""+m.at,"text_is",""+m.z,"code",""+m.as,"image_is",""+m.Q],t.N,t.z))
 s.ib(0,B.cI)
 r.ib(0,B.cI)}else if(m.at){s=m.x
 q=s.a.a
