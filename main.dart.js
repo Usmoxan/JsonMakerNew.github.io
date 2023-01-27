@@ -21742,7 +21742,8 @@ this.b=b},
 ado:function ado(a){this.a=a},
 adq:function adq(a,b){this.a=a
 this.b=b},
-adr:function adr(a){this.a=a},
+adr:function adr(a,b){this.a=a
+this.b=b},
 ads:function ads(a,b,c){this.a=a
 this.b=b
 this.c=c},
@@ -75445,7 +75446,7 @@ s=t.p
 r=A.b([],s)
 if(m.a.a<600)r.push(A.k1(p,B.D9,p,new A.adp(q,a),p))
 r.push(A.k1(p,B.oz,p,new A.adq(q,a),p))
-r.push(A.k1(p,B.D8,p,new A.adr(a),p))
+r.push(A.k1(p,B.D8,p,new A.adr(q,a),p))
 r.push(A.k1(p,B.D6,p,new A.ads(o,q,a),p))
 m=A.Ee(r,B.Pv)
 o=A.hM(new A.qD(new A.adt(o,q),p),1)
@@ -75478,14 +75479,15 @@ $S:0}
 A.adr.prototype={
 $0(){var s=0,r=A.a7(t.H),q=this,p,o,n
 var $async$$0=A.a8(function(a,b){if(a===1)return A.a4(b,r)
-while(true)switch(s){case 0:p=Date.now()
-o=A.azC(["Hello World!"],"text/plain")
-n=document.createElement("a")
-t.xz.a(n)
-n.href=(self.URL||self.webkitURL).createObjectURL(o)
-n.download="myfile"+new A.eL(p,!1).i(0)+".json"
-n.click()
-p=q.a.K(t.Pu)
+while(true)switch(s){case 0:p=q.a.a.d
+o=Date.now()
+n=A.azC(['{\n"items" : '+p+"}"],"text/plain")
+p=document.createElement("a")
+t.xz.a(p)
+p.href=(self.URL||self.webkitURL).createObjectURL(n)
+p.download="myfile"+new A.eL(o,!1).i(0)+".json"
+p.click()
+p=q.b.K(t.Pu)
 p.toString
 p.f.rI(B.Kd)
 return A.a5(null,r)}})
